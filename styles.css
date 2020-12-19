@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+    background-color: rgb(218, 218, 218);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242424;
+}
+.a_navbar{
+    display: flex;
+    margin-right: 4%;
+}
+.a_navbar a{
+    color: white;
+    font-size: 1.3em;
+    margin-left: 4em;
+    color: #d8d8d8;
+}
+.a_navbar a:hover{
+    color: #929292;
+    transition-delay: 0.2s;
+}
+.navbar img{
+    margin-left: 4%;
+    height: 4em;
+}
+.navbar img:hover{
+    animation: logo 0.5s;
+}
+.resume{
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(89,144,170,1) 0%, rgba(56,78,88,1) 71%);
+}
+.computer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 4%;
+}
+.computer img{
+    width: 40vw;
+    height: 60vh;
+    min-width: 205.59px;
+}
+.resume_text{
+    height: 41vw;
+    margin: auto 0;
+    animation: text 1.8s ease;
+}
+.resume_text p{
+    margin: 0 auto 0 auto;
+    padding: 2%;
+    width: 75%;
+    color: #d6d6d6;
+    border-left: 2px #303030 solid;
+}
+.resume_text h2{
+    color: #333;
+    margin: 14% 0 3% 13%;
+}
+.secondary_title{
+    background-color: #242424;
+    padding: 1% 0 1% 4%;
+    letter-spacing: 2px;
+    color:#C7C7C7;
+    margin-bottom: 5%;
+}
+.card h3{
+    margin-bottom: 10%;
+    width: 100%;
+}
+.card img{
+    width: 90%;
+    box-shadow: 10px 10px 8px #a3a3a3;
+    margin-bottom: 5%;
+}
+.card img:hover{
+    box-shadow: 15px 15px 13px #8a8a8a;
+    transition-delay: 0.2s;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 4%;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project *{
+    margin-bottom: 10%;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.project img{
+    width: 88%;
+    box-shadow: 10px #a3a3a3;
+}
+.btn-project{
+    border-radius: 20px;
+    background: #242424;
+    color: #C7C7C7;
+    padding: 10px 25px;
+    transition: border-radius 1.5s;
+}
+.btn-project:hover {
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+ } 
+ footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.6%;
+    margin-top: 2%;
+    background-color: #242424;
+    color: #C7C7C7;
+    text-align: center;
+}
+.about *{
+    margin-top: 5%;
+}
+.info *{
+    margin: 5% 0 5% 5%;;
+}
+
+@keyframes logo{
+    25%{
+        transform: rotate(-7deg);
+    }
+    50%{
+        transform: rotate(-15deg);
+    }
+}
+@keyframes text{
+    0%{
+        transform: translateY(100%);
+        font-size: 1.1em;
+    }
+    50%{
+        transform: translateY(-20%);
+    }
+    90%{
+        transform: translateY(1%);
+    }
+}
+@media only screen and (max-width: 600px){
+    .a_navbar a{
+        font-size: 1em;
+        margin-left: 3em;
+    }
+    .navbar img{
+        height: 4em;
+    }
+    .resume_text h2{
+        font-size: 0.9em;
+    }
+    .resume_text p{
+        font-size: 0.759em;
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 410px) {
+    .navbar{
+        padding: 15px 0 15px 0;
+    }
+    .a_navbar a{
+        font-size: 0.8em;
+        margin-left: 1.6em;
+    }
+    .navbar img{
+        height: 2rem;
+    }
+    .resume{
+        flex-wrap: wrap;
+    }
+    .images img{
+        margin-top: auto;
+    }
+    .resume_text{
+        height: 35%;
+    }
+    .resume_text h2{
+        width: 90%;
+        margin: 0 auto 4% auto;
+        font-size: 1.1em;
+    }
+    .resume_text p{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 0.8em;
+    }
+    .card{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .card img{
+        width: 80%;
+    }
+    footer{
+        font-size: 11px;
+    }
+    footer img{
+        width: 15%;
+    }
+}
